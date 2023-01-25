@@ -10782,9 +10782,23 @@ textarea.form-control-lg {
 }
 
 body {
-  height: 1000vh;
+  height: 180vh;
 }
 
+.header-container {
+  padding: 0 20px;
+}
+.header-container .social-icons {
+  margin-top: 350px;
+  column-gap: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+.header-container .social-icons svg {
+  width: 30px;
+  height: 30px;
+  fill: #fff;
+}
 .header .background-image {
   height: 95vh;
   width: 100%;
@@ -10800,6 +10814,13 @@ body {
   align-items: center;
   justify-content: space-between;
   padding-top: 50px;
+}
+.header .navbar-container .header-logo {
+  position: fixed;
+}
+.header-menu {
+  display: flex;
+  margin-left: auto;
 }
 .header-menu__list {
   display: flex;

@@ -12,12 +12,31 @@
 }
 
 body {
-    height: 1000vh;
+    height: 180vh;
 }
 
-
+.absolute-class {
+    // position: absolute !important;
+    // bottom: 50px;
+}
 
 .header {
+
+    &-container {
+        padding: 0 20px;
+
+        .social-icons {
+            margin-top: 350px;
+            column-gap: 20px;
+            display: flex;
+            justify-content: flex-end;
+            svg {
+                width: 30px;
+                height: 30px;
+                fill: #fff;
+            }
+        }
+    }
     
     .background-image {
         height: 95vh;
@@ -37,10 +56,14 @@ body {
         justify-content: space-between;
         padding-top: 50px;
         
+        .header-logo {
+            position: fixed;
+        }
     }
 
-
     &-menu {
+        display: flex;
+        margin-left: auto;
         &__list {
             display: flex;
             list-style: none;
