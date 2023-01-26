@@ -10847,4 +10847,29 @@ body {
   transform: translateX(-50%);
 }
 
+.periehomeno {
+  width: 100%;
+  background-image: linear-gradient(-57deg, #222867, #01524b);
+  color: #fff;
+}
+.periehomeno p {
+  font-size: 10px;
+}
+.periehomeno .beginning {
+  padding: 20px;
+}
+.periehomeno .beginning .solid {
+  border-top: 1px solid #fff;
+  opacity: 100%;
+  z-index: 100;
+}
+.periehomeno .beginning .text-box {
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.periehomeno .beginning .kefalides {
+  display: flex;
+  justify-content: space-between;
+}
+
 /*# sourceMappingURL=style.css.map */
