@@ -10785,6 +10785,12 @@ body {
   height: 180vh;
 }
 
+.secondary {
+  background: linear-gradient(-57deg, #222867, #01524b);
+  height: 100vh !important;
+  width: 100%;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -11052,6 +11058,27 @@ img {
   padding-top: 200px;
 }
 
+footer .footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0;
+  justify-content: space-between;
+}
+@media (min-width: 768px) {
+  footer .footer-container {
+    flex-direction: row;
+  }
+}
+footer .footer-container--social {
+  column-gap: 20px;
+  display: flex;
+}
+footer .footer-container--social svg {
+  width: 30px;
+  height: 30px;
+}
+
 .periehomeno {
   width: 100%;
   background-image: linear-gradient(-57deg, #222867, #01524b);
@@ -11077,25 +11104,72 @@ img {
   justify-content: space-between;
 }
 
-footer .footer-container {
+.secondary-header {
+  position: relative;
+}
+.secondary-header--logo-social {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  padding: 50px 0;
-  justify-content: space-between;
+  justify-content: center;
 }
 @media (min-width: 768px) {
-  footer .footer-container {
-    flex-direction: row;
+  .secondary-header--logo-social {
+    justify-content: space-between;
   }
 }
-footer .footer-container--social {
-  column-gap: 20px;
+.secondary-header--logo-social--icons {
   display: flex;
+  column-gap: 20px;
 }
-footer .footer-container--social svg {
+.secondary-header--logo-social--icons svg {
   width: 30px;
   height: 30px;
+  fill: #fff;
+}
+.secondary-header--white-bar {
+  background-color: #fff;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.secondary-header--white-bar .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (min-width: 768px) {
+  .secondary-header--white-bar .container {
+    justify-content: space-between;
+  }
+}
+.secondary-header--white-bar p {
+  margin: 0;
+}
+.secondary-header--image-links {
+  position: fixed;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  bottom: 0;
+}
+.secondary-header--image-links img {
+  width: 100%;
+  height: auto;
+}
+@media (min-width: 768px) {
+  .secondary-header--image-links {
+    width: auto;
+    position: absolute;
+    display: flex;
+    column-gap: 20px;
+    bottom: -80px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+@media (min-width: 1200px) {
+  .secondary-header--image-links {
+    bottom: 10px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

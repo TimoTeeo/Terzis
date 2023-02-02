@@ -15,6 +15,12 @@ body {
   height: 180vh;
 }
 
+.secondary {
+    background: linear-gradient(-57deg, #222867, #01524b);
+    height: 100vh !important;
+    width: 100%;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -43,6 +49,10 @@ img {
 // }
 @include media-breakpoint-up(md) {
 }
+
+
+// HOMEPAGE
+
 
 .header {
   padding: 0;
@@ -292,33 +302,6 @@ img {
   }
 }
 
-.periehomeno {
-  width: 100%;
-  background-image: linear-gradient(-57deg, #222867, #01524b);
-  color: #fff;
-
-  p {
-    font-size: 10px;
-  }
-
-  .beginning {
-    padding: 20px;
-    .solid {
-      border-top: 1px solid #fff;
-      opacity: 100%;
-      z-index: 100;
-    }
-    .text-box {
-      padding: 20px;
-      background-color: rgba(0, 0, 0, 0.6);
-    }
-    .kefalides {
-      display: flex;
-      justify-content: space-between;
-    }
-  }
-}
-
 footer {
   .footer-container {
     display: flex;
@@ -345,3 +328,113 @@ footer {
     }
   }
 }
+
+
+
+// TERZI
+.periehomeno {
+    width: 100%;
+    background-image: linear-gradient(-57deg, #222867, #01524b);
+    color: #fff;
+  
+    p {
+      font-size: 10px;
+    }
+  
+    .beginning {
+      padding: 20px;
+      .solid {
+        border-top: 1px solid #fff;
+        opacity: 100%;
+        z-index: 100;
+      }
+      .text-box {
+        padding: 20px;
+        background-color: rgba(0, 0, 0, 0.6);
+      }
+      .kefalides {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+}
+
+
+// PASOK
+
+
+// BPEIRAIA
+
+.secondary-header {
+    position: relative;
+    &--logo-social {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include media-breakpoint-up(md) {
+            justify-content: space-between;
+        }
+
+        &--icons {
+            display: flex;
+            column-gap: 20px;
+            svg {
+              width: 30px;
+              height: 30px;
+              fill: #fff;
+            }
+        }
+    }
+
+    &--white-bar {
+        background-color: #fff;
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            @include media-breakpoint-up(md) {
+                justify-content: space-between;
+            }
+        }
+        padding-top: 20px;
+        padding-bottom: 20px;
+        p {
+            margin: 0;
+        }
+    }
+
+    &--image-links {
+        position: fixed;
+        // display: flex;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        bottom: 0;
+        img {
+            width: 100%;
+            height: auto;
+        }
+        @include media-breakpoint-up(md) {
+            width: auto;
+            position: absolute;
+            display: flex;
+            column-gap: 20px;
+            bottom: -80px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        @include media-breakpoint-up(xl) {
+            bottom: 10px;
+        }
+    }
+
+
+}
+
+
+// PROTASEIS
+
+
+
+
+// CONTACT
