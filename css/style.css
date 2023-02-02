@@ -10773,8 +10773,12 @@ textarea.form-control-lg {
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+}
+
 .container {
-  max-width: 1920px !important;
+  max-width: 93% !important;
 }
 
 body {
@@ -10793,13 +10797,12 @@ img {
 
 .fixed-images-class {
   position: fixed !important;
-  top: 50px;
+  top: 75px;
 }
 
 .fixed-social-class {
   position: fixed !important;
   top: 50px;
-  right: 100px !important;
 }
 
 .fixed-white-bar-class {
