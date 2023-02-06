@@ -10786,8 +10786,7 @@ body {
 }
 
 .secondary {
-  background: linear-gradient(-57deg, #222867, #01524b);
-  height: 100vh !important;
+  background: linear-gradient(to top, #222867, #01524b);
   width: 100%;
 }
 
@@ -11064,6 +11063,7 @@ footer .footer-container {
   align-items: center;
   padding: 50px 0;
   justify-content: space-between;
+  background-color: #fff;
 }
 @media (min-width: 768px) {
   footer .footer-container {
@@ -11077,6 +11077,35 @@ footer .footer-container--social {
 footer .footer-container--social svg {
   width: 30px;
   height: 30px;
+}
+
+.inside-pages--header {
+  margin-top: 50px;
+}
+.inside-pages--header__title {
+  color: #fff;
+}
+.inside-pages--header__text {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  color: #fff;
+}
+@media (min-width: 768px) {
+  .inside-pages--header__text {
+    flex-direction: row;
+  }
+}
+@media (min-width: 768px) {
+  .inside-pages--header__text--left {
+    padding-right: 60px;
+  }
+}
+@media (min-width: 768px) {
+  .inside-pages--header__text--right {
+    padding-left: 60px;
+    text-align: right;
+  }
 }
 
 .periehomeno {
@@ -11108,6 +11137,7 @@ footer .footer-container--social svg {
   position: relative;
 }
 .secondary-header--logo-social {
+  height: 150px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -11170,6 +11200,17 @@ footer .footer-container--social svg {
   .secondary-header--image-links {
     bottom: 10px;
   }
+}
+
+.bpeiraia .inside-pages--info {
+  margin-top: 50px;
+}
+.bpeiraia .inside-pages--info__images {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+.bpeiraia .inside-pages--info__images img {
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
