@@ -383,8 +383,6 @@ footer {
   }
 }
 
-// PASOK
-
 // BPEIRAIA
 
 .secondary-header {
@@ -584,6 +582,86 @@ footer {
   }
 }
 
-// PROTASEIS
+// PROTASEIS,
+// PASOK,
+// TERZIS
+.general-main {
+  margin-bottom: 200px;
+  
+  .inside-pages--info {
+    margin-top: 50px;
+    &__phrases {
+      &--container {
+        background-color: rgba(0, 0, 0, 0.6);
+      }
+    }
+  }
+
+  .accordion-item {
+   
+  }
+
+  // .inside-pages--info--mobile {
+  //   margin-top: 50px;
+  //   padding-bottom: 200px;
+  //   &__image-phrase {
+  //     text-align: center;
+  //     img {
+  //       width: 100%;
+  //     }
+  //     &--container {
+  //       display: none;
+  //       pointer-events: none;
+  //       height: 0;
+  //       background-color: rgba(0, 0, 0, 0.6);
+  //       &--heading {
+  //         margin-left: 20px;
+  //         text-align: left;
+  //         &--title {
+  //           color: #fff;
+  //           font-weight: 700;
+  //           font-size: 18px;
+  //           margin-bottom: 10px;
+  //         }
+  //         &--subtitle {
+  //           font-weight: 400;
+  //           color: #fff;
+  //         }
+
+  //         padding: 50px 0;
+  //       }
+
+  //       &--accordion--title {
+  //         color: #fff;
+  //         text-align: left;
+  //         margin-left: 20px;
+  //         margin-bottom: 20px;
+  //       }
+  //     }
+
+  //     .accordion {
+  //       // background-color: rgba(0, 0, 0, 0.2);
+        
+  //       border-top: 2px solid #fff;
+  //       border-bottom: 2px solid #fff;
+  //       &-item {
+  //         // background-color: rgba(0, 0, 0, 0.2);
+
+  //         .accordion-header {
+  //           button {
+  //             // background-color: rgba(0, 0, 0, 0.2);
+              
+  //           }
+  //         }
+  //         .accordion-body {
+  //           // background-color: rgba(0, 0, 0, 0.2);
+  //         }
+  //       }
+  //     }
+      
+  //   }
+  // }
+}
+
 
 // CONTACT

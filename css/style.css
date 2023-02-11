@@ -11305,5 +11305,14 @@ footer .footer-container--social svg {
   border-top: 2px solid #fff;
   border-bottom: 2px solid #fff;
 }
+.general-main {
+  margin-bottom: 200px;
+}
+.general-main .inside-pages--info {
+  margin-top: 50px;
+}
+.general-main .inside-pages--info__phrases--container {
+  background-color: rgba(0, 0, 0, 0.6);
+}
 
 /*# sourceMappingURL=style.css.map */
