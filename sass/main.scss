@@ -523,7 +523,7 @@ footer {
     margin-top: 50px;
     padding-bottom: 200px;
     &__image-phrase {
-      text-align: center;
+      text-align: start;
       img {
         width: 100%;
       }
@@ -558,22 +558,8 @@ footer {
       }
 
       .accordion {
-        // background-color: rgba(0, 0, 0, 0.2);
-
         border-top: 2px solid #fff;
         border-bottom: 2px solid #fff;
-        &-item {
-          // background-color: rgba(0, 0, 0, 0.2);
-
-          .accordion-header {
-            button {
-              // background-color: rgba(0, 0, 0, 0.2);
-            }
-          }
-          .accordion-body {
-            // background-color: rgba(0, 0, 0, 0.2);
-          }
-        }
       }
     }
   }
