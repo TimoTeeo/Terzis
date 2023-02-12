@@ -11308,11 +11308,53 @@ footer .footer-container--social svg {
 .general-main {
   margin-bottom: 200px;
 }
+.general-main .inside-pages--header__title {
+  font-size: 30px;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+}
+.general-main .inside-pages--header__text {
+  width: 90%;
+  font-size: 20px;
+}
 .general-main .inside-pages--info {
   margin-top: 50px;
 }
-.general-main .inside-pages--info__phrases--container {
+.general-main .inside-pages--info__phrases--container .accordion-item {
   background-color: rgba(0, 0, 0, 0.6);
+  margin-bottom: 30px;
+  border-bottom: 0;
+}
+.general-main .inside-pages--info__phrases--container .accordion-item button {
+  text-decoration: underline;
+}
+.general-main .inside-pages--info__phrases--container .accordion-body {
+  border-top: 2px solid #fff;
+}
+.general-main .inside-pages--info__phrases--container .accordion-body .first {
+  border-top: 0 !important;
+}
+.general-main .inside-pages--info__phrases--container .accordion-body__text {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid #fff;
+  padding: 20px 0;
+}
+@media (min-width: 768px) {
+  .general-main .inside-pages--info__phrases--container .accordion-body__text--left {
+    min-width: 250px;
+    margin-right: 10%;
+  }
+}
+@media (min-width: 768px) {
+  .general-main .inside-pages--info__phrases--container .accordion-body__text--right {
+    max-width: 60%;
+  }
+}
+@media (min-width: 768px) {
+  .general-main .inside-pages--info__phrases--container .accordion-body__text {
+    flex-direction: row;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

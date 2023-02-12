@@ -470,9 +470,9 @@ footer {
       grid-template-columns: repeat(5, 1fr);
       .image-container {
         position: relative;
-        
+
         &::after {
-          content: '';
+          content: "";
           position: absolute;
           bottom: -10px;
           left: 50%;
@@ -485,7 +485,6 @@ footer {
         .image {
           width: 100%;
           position: relative;
-  
         }
       }
     }
@@ -560,7 +559,7 @@ footer {
 
       .accordion {
         // background-color: rgba(0, 0, 0, 0.2);
-        
+
         border-top: 2px solid #fff;
         border-bottom: 2px solid #fff;
         &-item {
@@ -569,7 +568,6 @@ footer {
           .accordion-header {
             button {
               // background-color: rgba(0, 0, 0, 0.2);
-              
             }
           }
           .accordion-body {
@@ -577,7 +575,6 @@ footer {
           }
         }
       }
-      
     }
   }
 }
@@ -587,18 +584,63 @@ footer {
 // TERZIS
 .general-main {
   margin-bottom: 200px;
-  
-  .inside-pages--info {
-    margin-top: 50px;
-    &__phrases {
-      &--container {
-        background-color: rgba(0, 0, 0, 0.6);
+  .inside-pages {
+    &--header {
+      &__title {
+        font-size: 30px;
+        text-decoration: underline;
+        text-decoration-skip-ink: none;
+      }
+      &__text {
+        width: 90%;
+        font-size: 20px;
       }
     }
-  }
+    &--info {
+      margin-top: 50px;
+      &__phrases {
+        &--container {
+          .accordion-item {
+            background-color: rgba(0, 0, 0, 0.6);
+            margin-bottom: 30px;
+            border-bottom: 0;
+            // border-bottom: 2px solid #fff;
+            button {
+              text-decoration: underline;
+            }
+          }
+          .accordion-body {
+            border-top: 2px solid #fff;
+            .first {
+              border-top: 0 !important;
+            }
+            &__text {
+              display: flex;
+              flex-direction: column;
+              // justify-content: space-between;
+              border-top: 1px solid #fff;
+              padding: 20px 0;
 
-  .accordion-item {
-   
+              &--left {
+                @include media-breakpoint-up(md) {
+                  min-width: 250px;
+                  margin-right: 10%;
+                }
+              }
+              &--right {
+                @include media-breakpoint-up(md) {
+                  max-width: 60%;
+                  // margin-right: 20%;
+                }
+              }
+              @include media-breakpoint-up(md) {
+                flex-direction: row;
+              }
+            }
+          }
+        }
+      }
+    }
   }
 
   // .inside-pages--info--mobile {
@@ -641,7 +683,7 @@ footer {
 
   //     .accordion {
   //       // background-color: rgba(0, 0, 0, 0.2);
-        
+
   //       border-top: 2px solid #fff;
   //       border-bottom: 2px solid #fff;
   //       &-item {
@@ -650,7 +692,7 @@ footer {
   //         .accordion-header {
   //           button {
   //             // background-color: rgba(0, 0, 0, 0.2);
-              
+
   //           }
   //         }
   //         .accordion-body {
@@ -658,10 +700,9 @@ footer {
   //         }
   //       }
   //     }
-      
+
   //   }
   // }
 }
-
 
 // CONTACT
