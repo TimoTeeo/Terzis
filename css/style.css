@@ -11353,7 +11353,7 @@ footer .footer-container--social svg {
   padding-bottom: 200px;
 }
 .bpeiraia .inside-pages--info--mobile__image-phrase {
-  text-align: center;
+  text-align: start;
 }
 .bpeiraia .inside-pages--info--mobile__image-phrase img {
   width: 100%;
@@ -11389,6 +11389,16 @@ footer .footer-container--social svg {
   border-top: 2px solid #fff;
   border-bottom: 2px solid #fff;
 }
+.bpeiraia .inside-pages--header__title {
+  font-size: 30px;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+}
+.bpeiraia .inside-pages--header__text {
+  width: 90%;
+  font-size: 20px;
+}
+
 .general-main {
   margin-bottom: 200px;
 }

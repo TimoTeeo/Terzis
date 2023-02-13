@@ -52,10 +52,10 @@ img {
   top: 120px;
   @include media-breakpoint-up(md) {
     top: 140px;
-  }  
+  }
   @include media-breakpoint-up(lg) {
     top: 150px;
-  }  
+  }
 }
 // .fixed-logo-class {
 //     width: 100%;
@@ -620,6 +620,17 @@ footer {
         border-top: 2px solid #fff;
         border-bottom: 2px solid #fff;
       }
+    }
+  }
+  .inside-pages--header {
+    &__title {
+      font-size: 30px;
+      text-decoration: underline;
+      text-decoration-skip-ink: none;
+    }
+    &__text {
+      width: 90%;
+      font-size: 20px;
     }
   }
 }
