@@ -11012,7 +11012,7 @@ img {
   padding-left: calc(var(--bs-gutter-x) * 0.5);
   margin-right: auto;
   margin-left: auto;
-  bottom: 50px;
+  bottom: 75px;
   text-align: right;
   right: 0;
   column-gap: 20px;
