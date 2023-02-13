@@ -10769,8 +10769,13 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+@font-face {
+  font-family: cerapro-reg;
+  src: url(../fonts/Cera\ Pro\ Regular.otf);
+}
 * {
   box-sizing: border-box;
+  font-family: cerapro-reg;
 }
 
 a {
@@ -10848,6 +10853,7 @@ img {
 @media (min-width: 992px) {
   .header .background-image {
     height: 95vh;
+    background-image: url("/img/background.png");
   }
 }
 .header .background-image .header-container {
@@ -11079,7 +11085,7 @@ img {
 @media (min-width: 992px) {
   .header .background-image .bottom-images {
     display: flex;
-    column-gap: 10px;
+    column-gap: 20px;
     width: auto;
     left: 50%;
     transform: translateX(-50%);
@@ -11284,7 +11290,7 @@ footer .footer-container--social svg {
 }
 @media (min-width: 1200px) {
   .secondary-header--image-links {
-    bottom: 10px;
+    bottom: 5px;
   }
 }
 

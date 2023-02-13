@@ -1,7 +1,13 @@
 @use "custom" as *;
+$cerapro-reg: cerapro-reg;
+@font-face {
+  font-family: $cerapro-reg;
+  src: url(../fonts/Cera\ Pro\ Regular.otf);
+}
 
 * {
   box-sizing: border-box;
+  font-family: $cerapro-reg;
 }
 
 a {
@@ -71,8 +77,10 @@ img {
     width: 100%;
     @include media-breakpoint-up(lg) {
       height: 95vh;
+      background-image: url("/img/background.png");
     }
     background-image: url("/img/background.png");
+
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -288,7 +296,7 @@ img {
       }
       @include media-breakpoint-up(lg) {
         display: flex;
-        column-gap: 10px;
+        column-gap: 20px;
         width: auto;
         left: 50%;
         transform: translateX(-50%);
@@ -507,7 +515,7 @@ footer {
       transform: translateX(-50%);
     }
     @include media-breakpoint-up(xl) {
-      bottom: 10px;
+      bottom: 5px;
     }
   }
 }
