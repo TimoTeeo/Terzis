@@ -11233,7 +11233,7 @@ footer .footer-container--social svg {
   align-items: center;
   justify-content: center;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .secondary-header--logo-social {
     justify-content: space-between;
   }
@@ -11246,6 +11246,11 @@ footer .footer-container--social svg {
   width: 30px;
   height: 30px;
   fill: #fff;
+}
+@media (max-width: 991.98px) {
+  .secondary-header--logo-social--icons {
+    display: none !important;
+  }
 }
 .secondary-header--white-bar {
   background-color: #fff;
@@ -11276,7 +11281,7 @@ footer .footer-container--social svg {
   width: 100%;
   height: auto;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .secondary-header--image-links {
     width: auto;
     position: absolute;

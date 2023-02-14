@@ -10,7 +10,6 @@ window.addEventListener("scroll", function () {
   let headerLogoPos = backgroundImage.getBoundingClientRect();
   // console.log(backgroundImage.clientHeight);
   // console.log(headerLogoPos.bottom);
-  console.log(headerLogoPos.bottom);
 
   // tablet and above
   if(window.innerWidth > 990) {
@@ -37,6 +36,14 @@ window.addEventListener("scroll", function () {
       }
     } else {
       scrollingHeader.classList.remove('show');
+    }
+  }
+});
+
+window.addEventListener("resize", function () {
+  if(window.innerWidth < 990) {  
+    if(bottomImages.classList.contains('fixed-images-class')) {
+      bottomImages.classList.remove('fixed-images-class')
     }
   }
 });
