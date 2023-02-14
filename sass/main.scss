@@ -1,7 +1,13 @@
 @use "custom" as *;
+$cerapro-reg: cerapro-reg;
+@font-face {
+  font-family: $cerapro-reg;
+  src: url(../fonts/Cera\ Pro\ Regular.otf);
+}
 
 * {
   box-sizing: border-box;
+  font-family: $cerapro-reg;
 }
 
 a {
@@ -52,10 +58,10 @@ img {
   top: 120px;
   @include media-breakpoint-up(md) {
     top: 140px;
-  }  
+  }
   @include media-breakpoint-up(lg) {
     top: 150px;
-  }  
+  }
 }
 // .fixed-logo-class {
 //     width: 100%;
@@ -71,8 +77,10 @@ img {
     width: 100%;
     @include media-breakpoint-up(lg) {
       height: 95vh;
+      background-image: url("/img/background.png");
     }
     background-image: url("/img/background.png");
+
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -92,7 +100,7 @@ img {
         height: 150px;
         background: linear-gradient(-57deg, #222867, #01524b);
         pointer-events: none;
-        transition: all 0.3s ease-in-out;
+        // transition: all 0.3s ease-in-out;
         z-index: 1;
         @include media-breakpoint-down(md) {
           height: 120px !important;
@@ -221,7 +229,7 @@ img {
         padding-left: calc(var(--bs-gutter-x) * 0.5);
         margin-right: auto;
         margin-left: auto;
-        bottom: 50px;
+        bottom: 75px;
         text-align: right;
         right: 0;
         column-gap: 20px;
@@ -288,7 +296,7 @@ img {
       }
       @include media-breakpoint-up(lg) {
         display: flex;
-        column-gap: 10px;
+        column-gap: 20px;
         width: auto;
         left: 50%;
         transform: translateX(-50%);
@@ -507,7 +515,7 @@ footer {
       transform: translateX(-50%);
     }
     @include media-breakpoint-up(xl) {
-      bottom: 10px;
+      bottom: 5px;
     }
   }
 }
@@ -620,6 +628,17 @@ footer {
         border-top: 2px solid #fff;
         border-bottom: 2px solid #fff;
       }
+    }
+  }
+  .inside-pages--header {
+    &__title {
+      font-size: 30px;
+      text-decoration: underline;
+      text-decoration-skip-ink: none;
+    }
+    &__text {
+      width: 90%;
+      font-size: 20px;
     }
   }
 }
