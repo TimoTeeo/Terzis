@@ -13,7 +13,7 @@ window.addEventListener("scroll", function () {
   // console.log(headerLogoPos.bottom);
 
   // tablet and above
-  if (window.innerWidth > 1450) {
+  if (window.innerWidth > 1200) {
     if (
       headerLogoPos.bottom + backgroundImage.clientHeight - 150 <
       backgroundImage.clientHeight
@@ -47,7 +47,7 @@ window.addEventListener("scroll", function () {
 
 window.addEventListener("resize", function () {
   let headerLogoPos = backgroundImage.getBoundingClientRect();
-  if (window.innerWidth < 1450) {
+  if (window.innerWidth < 1200) {
     if (bottomImages.classList.contains("fixed-images-class")) {
       bottomImages.classList.remove("fixed-images-class");
     }

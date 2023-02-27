@@ -11093,7 +11093,7 @@ img {
 .header .background-image .bottom-images img {
   width: 100%;
 }
-@media (min-width: 1450px) {
+@media (min-width: 1200px) {
   .header .background-image .bottom-images {
     display: flex;
     column-gap: 40px;
@@ -11103,6 +11103,14 @@ img {
     position: absolute;
     bottom: -55px;
     flex-direction: row;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .header .background-image .bottom-images {
+    column-gap: 0px;
+  }
+  .header .background-image .bottom-images img {
+    width: 80%;
   }
 }
 
@@ -11134,7 +11142,6 @@ img {
 }
 .main-container--image {
   text-align: center;
-  padding-top: 200px;
 }
 .main-container--image img {
   width: 100%;
@@ -11260,7 +11267,7 @@ footer .footer-container--social a {
   z-index: 100;
 }
 .secondary-header--logo-social {
-  height: 150px;
+  height: 110px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -11286,8 +11293,8 @@ footer .footer-container--social a {
 }
 .secondary-header--white-bar {
   background-color: #fff;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 13px;
+  padding-bottom: 13px;
 }
 .secondary-header--white-bar .container {
   display: flex;
@@ -11301,6 +11308,10 @@ footer .footer-container--social a {
 }
 .secondary-header--white-bar p {
   margin: 0;
+  font-size: 27px;
+}
+.secondary-header--white-bar__second {
+  font-size: 20px !important;
 }
 .secondary-header--image-links {
   position: fixed;
@@ -11313,25 +11324,37 @@ footer .footer-container--social a {
   width: 100%;
   height: auto;
 }
-@media (min-width: 1450px) {
+@media (min-width: 1200px) {
   .secondary-header--image-links {
     width: auto;
     position: absolute;
     display: flex;
-    column-gap: 20px;
+    column-gap: 40px;
     bottom: -80px;
     left: 50%;
     transform: translateX(-50%);
   }
 }
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .secondary-header--image-links {
+    column-gap: 0px;
+  }
+  .secondary-header--image-links img {
+    width: 80%;
+  }
+}
 @media (min-width: 1200px) {
   .secondary-header--image-links {
-    bottom: 5px;
+    bottom: 14px;
   }
 }
 
 .bpeiraia {
   margin-bottom: 200px;
+}
+.bpeiraia .accordion-body {
+  margin-top: 20px;
+  width: 60%;
 }
 .bpeiraia .show {
   display: block !important;
@@ -11473,8 +11496,13 @@ footer .footer-container--social a {
 .general-main .inside-pages--info__phrases--container .accordion-body__text {
   display: flex;
   flex-direction: column;
+  align-items: center;
   border-top: 1px solid #fff;
   padding: 20px 0;
+}
+.general-main .inside-pages--info__phrases--container .accordion-body__text p {
+  padding: 0;
+  margin: 0;
 }
 @media (min-width: 768px) {
   .general-main .inside-pages--info__phrases--container .accordion-body__text--left {
