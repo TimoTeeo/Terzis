@@ -10829,11 +10829,11 @@ img {
 
 .fixed-white-bar-class {
   position: fixed !important;
-  top: 120px;
+  top: 90px;
 }
 @media (min-width: 768px) {
   .fixed-white-bar-class {
-    top: 140px;
+    top: 104px;
   }
 }
 @media (min-width: 992px) {
@@ -10851,11 +10851,10 @@ img {
 .header .background-image {
   height: 100vh;
   width: 100%;
-  background-image: url("/img/background.png");
+  background-image: url("/img/background-mobile.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-attachment: fixed;
   position: relative;
 }
 @media (min-width: 992px) {
@@ -10881,12 +10880,12 @@ img {
 }
 @media (max-width: 767.98px) {
   .header .background-image .header-container-scrolling {
-    height: 120px !important;
+    height: 90px !important;
   }
 }
 @media (max-width: 991.98px) {
   .header .background-image .header-container-scrolling {
-    height: 140px;
+    height: 104px;
   }
 }
 .header .background-image .header-container .navbar-container {
@@ -10941,7 +10940,7 @@ img {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  top: 450px;
+  top: 290px;
 }
 @media (min-width: 768px) {
   .header .background-image .header-container .navbar-container .header-mobile-menu {
@@ -10977,7 +10976,7 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 @media (min-width: 768px) {
   .header .background-image .header-container .ipopsifios {
@@ -10995,11 +10994,12 @@ img {
   color: #fff;
 }
 .header .background-image .header-container .ipopsifios img {
-  margin-bottom: 20px;
+  width: 60px !important;
+  margin-bottom: 10px;
 }
 .header .background-image .header-container .ipopsifios-title {
-  font-size: 25px;
-  line-height: 1.5;
+  font-size: 18px;
+  line-height: 1.2;
 }
 @media (min-width: 992px) {
   .header .background-image .header-container .ipopsifios-title {
@@ -11007,8 +11007,8 @@ img {
   }
 }
 .header .background-image .header-container .ipopsifios-name {
-  font-size: 20px;
-  margin-top: 30px !important;
+  font-size: 13px;
+  margin-top: 13px !important;
 }
 @media (min-width: 992px) {
   .header .background-image .header-container .ipopsifios-name {
@@ -11052,7 +11052,12 @@ img {
   font-size: 27px;
 }
 .header .background-image .header-container--text-line__second {
-  font-size: 20px;
+  font-size: 12px;
+}
+@media (min-width: 768px) {
+  .header .background-image .header-container--text-line__second {
+    font-size: 20px;
+  }
 }
 @media (min-width: 768px) {
   .header .background-image .header-container--text-line {
@@ -11088,7 +11093,11 @@ img {
   grid-template-columns: repeat(4, 1fr);
   width: 100%;
   justify-content: center;
-  height: fit-content;
+}
+@media (min-width: 992px) {
+  .header .background-image .bottom-images {
+    height: fit-content;
+  }
 }
 .header .background-image .bottom-images img {
   width: 100%;
@@ -11181,7 +11190,7 @@ img {
 .main .crt-widget.crt-widget-branded .crt-logo {
   display: none;
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .main .crt-widget .crt-post {
     max-height: 500px;
     overflow-y: scroll;
@@ -11293,6 +11302,7 @@ footer .footer-container--social a {
 }
 .secondary-header--white-bar {
   background-color: #fff;
+  box-shadow: 0 30px 24px -30px;
   padding-top: 13px;
   padding-bottom: 13px;
 }
@@ -11456,7 +11466,6 @@ footer .footer-container--social a {
 }
 .bpeiraia .inside-pages--header__title {
   font-size: 30px;
-  text-decoration: underline;
   text-decoration-skip-ink: none;
 }
 .bpeiraia .inside-pages--header__text {
@@ -11469,7 +11478,6 @@ footer .footer-container--social a {
 }
 .general-main .inside-pages--header__title {
   font-size: 30px;
-  text-decoration: underline;
   text-decoration-skip-ink: none;
 }
 .general-main .inside-pages--header__text {
@@ -11483,9 +11491,6 @@ footer .footer-container--social a {
   background-color: rgba(0, 0, 0, 0.6);
   margin-bottom: 30px;
   border-bottom: 0;
-}
-.general-main .inside-pages--info__phrases--container .accordion-item button {
-  text-decoration: underline;
 }
 .general-main .inside-pages--info__phrases--container .accordion-body {
   border-top: 2px solid #fff;
